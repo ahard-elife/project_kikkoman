@@ -16,12 +16,13 @@
 
 ## Docker Image
 
-The Docker image for Kikkoman project is provided in the `/image` directory.
+The Docker image for Kikkoman project is downloaded from "Github releases"
+using this URL:
 
+https://github.com/ahard-elife/project_kikkoman/releases
 
 ### Loading
 
-```sh
 gunzip -c kikkoman-latest.tar.gz | docker load
 
 ---
@@ -30,25 +31,23 @@ gunzip -c kikkoman-latest.tar.gz | docker load
 
 API specifications and usage guides are in the `/docs` directory.
  
----
 
 ## Docker Run
 
 Download the Docker image from  or the /image directory.
 (can put it in GitHub Releases later on or via AWS ECR)
 
-Load:
+**Load**:
 
 gunzip -c kikkoman-latest.tar.gz | docker load
 
-Run the container:
+**Run the container**:
 
 docker run -d -p 5000:5000 --name kikkoman-server kikkoman:latest
 
 (Adjust tag and port mapping as needed)
 
 ---
-
 
 ## Todo
 
@@ -57,9 +56,9 @@ docker run -d -p 5000:5000 --name kikkoman-server kikkoman:latest
 
 
 ## Update History
-
-Version	Date	Notes
-v1.0	2025-09-18	Self-containing JSON-service
+| Version | Date       | Notes                        |
+|---------|------------|------------------------------|
+| v1.0.0  | 2025-09-18 | Self-containing JSON-service |
 
 ---
 
