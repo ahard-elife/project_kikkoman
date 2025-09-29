@@ -21,9 +21,7 @@ using this URL:
 
 https://github.com/ahard-elife/project_kikkoman/releases
 
-### Loading
-
-gunzip -c kikkoman-latest.tar.gz | docker load
+(I can push it to AWS ECR later if the need arises.)
 
 ---
 
@@ -34,12 +32,9 @@ API specifications and usage guides are in the `/docs` directory.
 
 ## Docker Run
 
-Download the Docker image from  or the /image directory.
-(can put it in GitHub Releases later on or via AWS ECR)
-
 **Load**:
 
-gunzip -c kikkoman-latest.tar.gz | docker load
+gunzip -c kikkoman-1.0.0.tar.gz | docker load
 
 **Run the container**:
 
